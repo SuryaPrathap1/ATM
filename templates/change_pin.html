@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/style.css">
+<title>Change PIN</title>
+</head>
+<body>
+<div class="box">
+  <h2>Change PIN - {{ user.name }}</h2>
+  <form method="POST">
+    <input type="password" name="old_pin" placeholder="Old PIN" required>
+    <input type="password" name="new_pin1" placeholder="New PIN" required>
+    <input type="password" name="new_pin2" placeholder="Confirm New PIN" required>
+    <button type="submit">Change PIN</button>
+  </form>
+  <a class="exit" href="/">Exit</a>
+</div>
+</body>
+</html>

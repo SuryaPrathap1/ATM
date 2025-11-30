@@ -1,0 +1,95 @@
+body {
+    background: #0b0f14;
+    font-family: Arial, sans-serif;
+    color: #eee;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    margin: 40px auto;
+    width: 420px;
+    padding: 24px;
+    background: #121417;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+/* wider box for mini statement - template will override width */
+.box.wide {
+    width: 820px;
+    padding: 20px;
+}
+
+/* Inputs and buttons */
+input, button, a {
+    width: 88%;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    display: block;
+}
+
+button, a.btn {
+    background: #0a84ff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a.exit {
+    background: #666;
+    width: 40%;
+    margin-top: 18px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Table styles for mini statement */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    color: #fff;
+}
+th, td {
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+th {
+    background: rgba(255,255,255,0.04);
+}
+
+/* Failure message style */
+.failure-text {
+    color: #ffcccc;
+    font-weight: bold;
+    white-space: pre-wrap;
+}
+
+/* Success message style */
+.success-text {
+    color: #ccffd6;
+    font-weight: bold;
+    white-space: pre-wrap;
+}
+
+/* Make links look like buttons */
+a {
+    text-decoration: none;
+}
+
+/* For small screens */
+@media (max-width: 900px) {
+    .box.wide { width: 95%; }
+    .box { width: 92%; }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/style.css">
+<title>Mini Statement</title>
+</head>
+<body>
+<div class="box wide">
+  <h2>Mini Statement - {{ user.name }}</h2>
+  <p><strong>Current Balance:</strong> ₹ {{ user.balance }}</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Date & Time</th>
+        <th>Type</th>
+        <th>Amount (₹)</th>
+        <th>Remaining Balance (₹)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for t in user.transactions|reverse %}
+      <tr>
+        <td>{{ t.time }}</td>
+        <td>{{ t.type }}</td>
+        <td>{{ t.amount }}</td>
+        <td>{{ t.balance }}</td>
+      </tr>
+      {% else %}
+      <tr>
+        <td colspan="4">No transactions yet</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <!-- exit is available because user needs time to read -->
+  <a class="exit" href="/">Exit</a>
+</div>
+</body>
+</html>

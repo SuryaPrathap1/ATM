@@ -1,0 +1,49 @@
+[
+    {
+        "acc_no": 123456789,
+        "name": "prathap",
+        "pin": "2003",
+        "balance": 44000,
+        "transactions": [
+            {
+                "time": "2025-11-30 13:31:16",
+                "type": "Deposit",
+                "amount": 40000,
+                "balance": 40000
+            },
+            {
+                "time": "2025-11-30 15:39:28",
+                "type": "Deposit",
+                "amount": 9500,
+                "balance": 49500
+            },
+            {
+                "time": "2025-11-30 15:40:21",
+                "type": "Withdraw",
+                "amount": 5500,
+                "balance": 44000
+            }
+        ],
+        "daily": {
+            "date": "2025-11-30",
+            "deposit": 49500,
+            "withdraw": 5500,
+            "wrong_attempts_date": "2025-11-30",
+            "wrong_attempts": 0
+        }
+    },
+    {
+        "acc_no": 987456321,
+        "name": "vinod",
+        "pin": "2000",
+        "balance": 0,
+        "transactions": [],
+        "daily": {
+            "date": "2025-11-30",
+            "deposit": 0,
+            "withdraw": 0,
+            "wrong_attempts_date": "2025-11-30",
+            "wrong_attempts": 0
+        }
+    }
+]

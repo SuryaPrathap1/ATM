@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/style.css">
+<title>Options</title>
+</head>
+<body>
+<div class="box">
+  <h2>Welcome {{ user.name }}</h2>
+  <p>Account: {{ acc_no }}</p>
+
+  <a class="btn" href="/withdraw/{{acc_no}}">Withdraw</a>
+  <a class="btn" href="/deposit/{{acc_no}}">Deposit</a>
+  <a class="btn" href="/mini/{{acc_no}}">Mini Statement</a>
+  <a class="btn" href="/balance/{{acc_no}}">Check Balance</a>
+  <a class="btn" href="/change_pin/{{acc_no}}">Change PIN</a>
+
+  <a class="exit" href="/">Exit</a>
+</div>
+</body>
+</html>
